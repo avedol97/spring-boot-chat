@@ -6,10 +6,14 @@
 </head>
 <body onload="connect()">
 <div>
-    <label>You message:</label>
-    <textarea id="messageToSend" type="text"></textarea>
+    <label>User : </label>
+    <input id="user" type="text"><br>
+
+    <label>You message : </label>
+    <textarea id="messageToSend" type="text"></textarea></br>
+
     <button onclick="sendMessage()">Send</button>
-    <p id="response">Wi</p>
+    <p id="response">Chat : </p>
     <script src="js.js"></script>
     <script src="stomp.js"></script>
 </div>

@@ -10,6 +10,6 @@ public class ChatMesageController {
     @MessageMapping("/chat")
     @SendTo("/topic/messages")
     public ChatMessage getChatMessage(ChatMessage chatMessage){
-        return new ChatMessage(chatMessage.getValue() + "GUI");
+        return chatMessage;
     }
 }
